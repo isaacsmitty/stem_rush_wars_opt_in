@@ -54,7 +54,7 @@ export default class WarStatus extends Component {
 
   render() {
     if (this.state.loading) {
-      return <h1>Loading Tasks...</h1>;
+      return <h1>Loading Team Status...</h1>;
     }
     const status = this.state.teamStatus.map((teamStatus, index) => (
       <PlayerStatus key={index} index={index} status={teamStatus} 
